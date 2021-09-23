@@ -157,7 +157,7 @@ button[type="submit"]:hover,
   padding: 20px 0; 
   width: 100%;
   z-index: 99; 
-  background: #fff;
+  background: var(--whiteColor);
   box-shadow: var(--boxShadow);
 }
 .logo-area a {
@@ -176,6 +176,10 @@ button[type="submit"]:hover,
   position: relative;
   transition: .3s;
 } 
+nav ul li a.active {
+  font-weight: 500;
+  color: var(--redColor);
+}
 .menu-area nav ul li a:hover{
   color: var(--redColor);
 }
@@ -208,7 +212,7 @@ button[type="submit"]:hover,
   position: fixed;
   width: 320px;
   height: 100vh;
-  background: #ffffff;
+  background: var(--whiteColor);
   z-index: 99;
   box-shadow: 0px 0px 9px -1px #737373;
   top: 0;
@@ -232,7 +236,7 @@ button[type="submit"]:hover,
   line-height: 40px;
   border-radius: 50%;
   font-size: 22px;
-  color: #fff;
+  color: var(--whiteColor);
   box-shadow: 0px 0px 17px -2px #0000004a;
 }
 .mobile-menu  nav ul li {
