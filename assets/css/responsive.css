@@ -51,9 +51,34 @@
         margin-top: 30px;
     }
 
+    /* About us STARTED */
+    .why-blk { 
+        height: auto; 
+    }
+    .meeting-blk { 
+        margin-top: 30px;
+    }
 
-
-
+    /* Contacr page STARTED */
+    .contactInfo {
+        margin-top: 50px;
+        margin-left: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .contactInfo a {
+        display: block;
+        text-align: center;
+        margin: 0;
+        width: 31%;
+        font-size: 19px;
+    }
+    
+    .contactInfo a i {
+        display: block;
+        margin: auto;
+        margin-bottom: 15px;
+    }
 
 
 
@@ -148,10 +173,60 @@
         margin: auto;
     }
 
+    /* About page STARTED */
+
+    .srd-wrp {
+        margin-bottom: 25px;
+    }
+    .meeting-area img.shapImg { 
+        right: 0%; 
+        max-height: 56px;
+    }
+    .meeting-blk {
+        margin-top:30px;
+    }
+    .meeting-area .section-title {
+        margin: 0;
+    }
 
 
+    /* Contact page STARTED */
+    
+    .contactInfo {
+        margin-top: 50px;
+        margin-left: 0px; 
+    }
+    .contactInfo a {
+        display: block;
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        font-size: 19px;
+    }
+    
+    .contactInfo a i {
+        display: block;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .duble-input {
+        display: block;
+    }
+    
+    .duble-input label {
+        width: 100%;
+    }
+    
+    button {
+        width: 100%;
+    }
 
- 
+    /* Request a demo started */
+    .request_a_demo-area {
+        padding-bottom: 50px;
+        margin-top: -45px;
+    }
+
 }
  
 /* Large Mobile screen :480px. */
