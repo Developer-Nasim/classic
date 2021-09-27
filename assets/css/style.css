@@ -458,6 +458,9 @@ a.logo {
 .testimonail-area {
   background: var(--grayBackg);
 }
+.testimonials.owl-carousel{
+  direction: initial;
+}
 .testimonial-blk {
   background: #fff;
   padding: 30px;

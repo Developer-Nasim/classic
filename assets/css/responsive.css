@@ -144,6 +144,9 @@
     body{
         font-size: 14px;
     }
+    .hero-area {
+        height: auto;
+    }
     h2 {
         font-size: 28px;
     }
@@ -231,6 +234,24 @@
     button.changeLang {
         width: max-content;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
  
 /* Large Mobile screen :480px. */

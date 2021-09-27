@@ -46,7 +46,7 @@
     margin: 30,
     items:3,
     center: true,
-    rtl: true,
+    // rtl: true,
     navText: [
       '<i class="fas fa-long-arrow-left"></i>',
       '<i class="fas fa-long-arrow-right"></i>'
