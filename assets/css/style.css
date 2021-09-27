@@ -334,7 +334,7 @@ a.logo {
   height: 100%;
   z-index: -1;
   object-fit: cover;
-  object-position: top;
+  object-position: center;
 }
 
 .hero-wrp h1 {
