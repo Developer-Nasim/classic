@@ -1,15 +1,15 @@
 (function($) {
   "use strict";
 
-  let body = document.querySelector('body') 
+  let bodyElm = document.bodyElm || document.documentElement;
   let langBtn = document.querySelectorAll('.changeLang');
   langBtn.forEach(singleBtn => {
     if (localStorage.getItem('langs')) {
-        body.classList.add('rtlVrs')
+        bodyElm.classList.add('rtlVrs')
         singleBtn.dataset.lang = "arabic";
         singleBtn.innerHTML = "English";
     }else{ 
-        body.classList.remove('rtlVrs')
+        bodyElm.classList.remove('rtlVrs')
     }
   }) 
   window.addEventListener('click', (e) => {
@@ -25,9 +25,9 @@
           }  
       }
       if (localStorage.getItem('langs')) {
-          body.classList.add('rtlVrs')
+          bodyElm.classList.add('rtlVrs')
       }else{ 
-          body.classList.remove('rtlVrs')
+          bodyElm.classList.remove('rtlVrs')
       }
   })
 
