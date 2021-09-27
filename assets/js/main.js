@@ -1,19 +1,17 @@
 (function($) {
   "use strict";
 
-  let body = document.querySelector('body')
-  window.addEventListener('load', ()=> { 
-    let langBtn = document.querySelectorAll('.changeLang');
-    langBtn.forEach(singleBtn => {
-      if (localStorage.getItem('langs')) {
-          body.classList.add('rtlVrs')
-          singleBtn.dataset.lang = "arabic";
-          singleBtn.innerHTML = "English";
-      }else{ 
-          body.classList.remove('rtlVrs')
-      }
-    })
-  })
+  let body = document.querySelector('body') 
+  let langBtn = document.querySelectorAll('.changeLang');
+  langBtn.forEach(singleBtn => {
+    if (localStorage.getItem('langs')) {
+        body.classList.add('rtlVrs')
+        singleBtn.dataset.lang = "arabic";
+        singleBtn.innerHTML = "English";
+    }else{ 
+        body.classList.remove('rtlVrs')
+    }
+  }) 
   window.addEventListener('click', (e) => {
       if (e.target.classList.contains('changeLang')) {
           if (e.target.dataset.lang == "english") {
