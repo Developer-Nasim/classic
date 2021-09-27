@@ -1024,9 +1024,9 @@ body.rtlVrs .mobile-menu a.bars {
   left: 30px;
   top: 20px;
 }
-body.rtlVrs .hero-area img {
+/* body.rtlVrs .hero-area img {
   transform: rotateY(180deg);
-}
+} */
 body.rtlVrs .accordion-item button {text-align: right;} 
 body.rtlVrs .accordion-item button::after {
     right: auto;
