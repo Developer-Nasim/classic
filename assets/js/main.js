@@ -1,6 +1,40 @@
 (function($) {
   "use strict";
+
   
+  window.addEventListener('load', ()=> { 
+    let langBtn = document.querySelectorAll('.changeLang');
+    langBtn.forEach(singleBtn => {
+      if (localStorage.getItem('langs')) {
+          document.body.classList.add('rtlVrs')
+          singleBtn.dataset.lang = "arabic";
+          singleBtn.innerHTML = "English";
+      }else{ 
+          document.body.classList.remove('rtlVrs')
+      }
+    })
+  })
+  window.addEventListener('click', (e) => {
+      if (e.target.classList.contains('changeLang')) {
+          if (e.target.dataset.lang == "english") {
+              e.target.dataset.lang = "arabic";
+              e.target.innerHTML = "English";
+              localStorage.setItem('langs', "arabic")
+          }else if (e.target.dataset.lang == "arabic") {
+              e.target.dataset.lang = "english";
+              e.target.innerHTML = "Arabic";
+              localStorage.removeItem('langs')
+          }  
+      }
+      if (localStorage.getItem('langs')) {
+          document.body.classList.add('rtlVrs')
+      }else{ 
+          document.body.classList.remove('rtlVrs')
+      }
+  })
+
+
+
  // menu 
   $('.siteBar-btn').click( function (){ 
     $('.mobile-menu').toggleClass('siteBar');   
@@ -12,6 +46,7 @@
     margin: 30,
     items:3,
     center: true,
+    rtl: true,
     navText: [
       '<i class="fas fa-long-arrow-left"></i>',
       '<i class="fas fa-long-arrow-right"></i>'

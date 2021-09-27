@@ -7,7 +7,9 @@
 
 /* Normal screen :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
-
+    .menu-area nav ul li a{
+        margin-left: 20px;
+    }
 
 }
 
@@ -226,7 +228,9 @@
         padding-bottom: 50px;
         margin-top: -45px;
     }
-
+    button.changeLang {
+        width: max-content;
+    }
 }
  
 /* Large Mobile screen :480px. */
