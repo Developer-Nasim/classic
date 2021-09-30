@@ -1205,6 +1205,7 @@ button.changeLang {
 .theAllProcess {
   max-width: 903px;
   margin: auto;
+  direction: ltr;
 }
 .theProcess {
   position: relative;
