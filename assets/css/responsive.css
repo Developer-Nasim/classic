@@ -11,6 +11,7 @@
         margin-left: 20px;
     }
 
+
 }
 
  
@@ -109,10 +110,53 @@
     }
 
 
-
-
-
-
+    /* .process-blk img {
+        display: block;
+        margin: auto;
+    }
+    .process-blk {
+        padding-left: 0;
+        min-width: 215px;
+        max-width: 215px;
+        text-align: center;
+        border: none;
+    }
+    .process-blk {
+        margin-top: 0;
+        margin-bottom: 35px;
+    }
+    .process-blk.middleOne {
+        margin-top: 0;
+        margin-bottom: 35px;
+    } */
+    
+    .theAllProcess {
+        min-width: 745px;
+        max-width: 745px; 
+    }
+    .theProcess.firstBlk .theShap, .theProcess.btmBlk .theShap {
+        /* display: none; */
+        left: 295px;
+    }
+    .theProcess.firstBlk .theShap { 
+        top: 53%;
+    }
+    .theProcess.btmBlk .theShap { 
+        top: 71%;
+    }
+    .theProcess.midBlk.rightStyle .process-blk {
+        min-width: 180px;
+        max-width: 180px;
+    }
+    .theProcess.midBlk.rightStyle, .theProcess.midBlk.leftStyle {
+        max-width: 350px; 
+    } 
+    .theProcess.midBlk.leftStyle {
+        max-width: 405px;
+    }
+    .theProcess.midBlk.leftStyle .iconItIs { 
+        right: -130px; 
+    }
 }
 
  
