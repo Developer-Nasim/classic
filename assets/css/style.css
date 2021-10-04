@@ -359,9 +359,7 @@ a.logo {
   padding: 30px;
 }
 
-.sr-blk span.icon {
-  display: block;
-  width: max-content;
+.sr-blk .iconItIs { 
   margin: auto;
   margin-bottom: 20px;
 }
@@ -405,10 +403,7 @@ a.logo {
   margin-top: 10px;
   font-weight: 500;
   font-size: 20px;
-}
-.process-blk img { 
-  /* display: none;  */
-}
+} 
 .process-blk.middleOne {
   margin-top: 180px;
   margin-bottom: 160px;
@@ -428,6 +423,104 @@ a.logo {
   margin-bottom: 255px;
 }
 
+.theAllProcess {
+  max-width: 903px;
+  margin: auto;
+  direction: ltr;
+}
+.theProcess {
+  position: relative;
+}
+.theProcess .theShap {
+  position: absolute;
+  width: 100px;
+  height: 151px;
+  border: 1px dashed var(--redColor);
+  border-left: none;
+  border-radius: 0 100px 100px 0;
+  top: 0;
+}
+.theProcess.firstBlk .theShap, .theProcess.btmBlk .theShap {
+  left: 350px;
+  top: 60%;
+  transform: translateY(-50%);
+  width: 100px;
+  border-bottom: none;
+  height: 2px;
+}
+.theProcess.rightStyle .process-blk {
+  margin-left: auto;
+  margin-right: 0;
+}
+.theProcess.midBlk.rightStyle,
+.theProcess.midBlk.leftStyle {
+  max-width: 450px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 0;
+}
+.theProcess.midBlk.leftStyle {
+  margin: 0;
+} 
+.theProcess.midBlk.leftStyle .theShap {
+  left: auto;
+  right: 0;
+  border-left: 1px dashed var(--redColor);
+  border-radius: 100px 0 0 100px;
+  border-right: none;
+}
+.iconItIs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background: #F5F5F5;
+  border-radius: 50%;
+  z-index: 2;
+} 
+.iconItIs svg {
+  max-width: 35px;
+}
+.theProcess .iconItIs,
+.process-blk .iconItIs{
+  box-shadow: 0px 0px 20px 5px #c7c7c796;
+  background: #fff;
+}
+.theProcess.firstBlk .iconItIs, 
+.theProcess.btmBlk .iconItIs 
+{
+  position: absolute;
+  top: 60%;
+  right: -115px;
+  transform: translateY(-50%);
+}
+.theProcess.midBlk.rightStyle .iconItIs {
+  position: absolute;
+  left: -115px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.theProcess.midBlk.leftStyle .iconItIs {
+  position: absolute;
+  top: 50%;
+  right: -105px;
+  transform: translateY(-50%);
+}
+.theProcess.firstBlk {
+  margin-bottom: -40px;
+}
+.theProcess.btmBlk {
+  margin-top: -57px;
+}
+.process-blk .iconItIs {
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+
   
 
 /* Process-area END && Serve-area STARTED */
@@ -439,6 +532,7 @@ a.logo {
   padding: 20px;
   box-shadow: var(--boxShadow);
   border-radius: 10px;
+  min-height: 510px;
 }
 
 .srv-blk img {
@@ -543,9 +637,8 @@ a.logo {
 } 
 .owl-dots .owl-dot.active {
   background: var(--redColor);
-}
-
-
+} 
+ 
 /* Testimonail-area END && FAQ-area STARTED */
 
 
@@ -780,17 +873,17 @@ footer.section-padding{
   padding: 25px;
   box-shadow: var(--boxShadow);
   border-radius: 16px;
+  min-height: 205px;
 }
 
 .meeting-blk h4 {
   display: flex;
   align-items: center;
 }
-
-.meeting-blk h4 img {
+.meeting-blk h4 .iconItIs {
   margin-right: 10px;
+  background: #e2c7812b;
 }
-
 .meeting-blk  p {
   margin: 0;
 }
@@ -1192,103 +1285,4 @@ button.changeLang {
 
 
 
-
-
-
-
-
-
-/* Final Line */
-
-
-
-.theAllProcess {
-  max-width: 903px;
-  margin: auto;
-  direction: ltr;
-}
-.theProcess {
-  position: relative;
-}
-.theProcess .theShap {
-  position: absolute;
-  width: 100px;
-  height: 151px;
-  border: 1px dashed var(--redColor);
-  border-left: none;
-  border-radius: 0 100px 100px 0;
-  top: 0;
-}
-.theProcess.firstBlk .theShap, .theProcess.btmBlk .theShap {
-  left: 350px;
-  top: 60%;
-  transform: translateY(-50%);
-  width: 100px;
-  border-bottom: none;
-  height: 2px;
-}
-.theProcess.rightStyle .process-blk {
-  margin-left: auto;
-  margin-right: 0;
-}
-.theProcess.midBlk.rightStyle,
-.theProcess.midBlk.leftStyle {
-  max-width: 450px;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  margin-right: 0;
-}
-.theProcess.midBlk.leftStyle {
-  margin: 0;
-} 
-.theProcess.midBlk.leftStyle .theShap {
-  left: auto;
-  right: 0;
-  border-left: 1px dashed var(--redColor);
-  border-radius: 100px 0 0 100px;
-  border-right: none;
-}
-.iconItIs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 70px;
-  height: 70px;
-  background: #fff;
-  border-radius: 50%;
-  box-shadow: 0px 0px 20px 5px #c7c7c796;
-  z-index: 2;
-} 
-.iconItIs svg {
-  max-width: 35px;
-}
-.theProcess.firstBlk .iconItIs, 
-.theProcess.btmBlk .iconItIs 
-{
-  position: absolute;
-  top: 60%;
-  right: -115px;
-  transform: translateY(-50%);
-}
-.theProcess.midBlk.rightStyle .iconItIs {
-  position: absolute;
-  left: -115px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.theProcess.midBlk.leftStyle .iconItIs {
-  position: absolute;
-  top: 50%;
-  right: -105px;
-  transform: translateY(-50%);
-}
-.theProcess.firstBlk {
-  margin-bottom: -40px;
-}
-.theProcess.btmBlk {
-  margin-top: -57px;
-}
-
-
+ 
